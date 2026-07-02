@@ -1,0 +1,74 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+#main{
+    padding: 20px;
+    height: 100%;
+    width: 100%;
+    background: mistyrose;
+    border-radius: 20px;
+}
+#navbar {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 50px;
+}
+#filters{
+    width: 80%;
+    margin: 30px auto;
+    padding: 10px;
+    font-size: 14px;
+    font-weight: 200;
+    display: flex;
+    justify-content: space-evenly;
+    border-radius: 10px;
+    gap: 20%;
+    background:rgb(248, 245, 244);
+}
+.cards{
+    display: grid;
+    grid-gap: 20px;
+    padding: 10px;
+    background: linear-gradient(rgb(163, 235, 163), rgb(212, 80, 102),#ed95e3);
+    border-radius: 20px;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(2,200px);
+    
+    grid-template-areas: "management data-analytics crm-automation"
+                         "project marketing automation";
+
+}
+.card{
+    border-radius: 10px;
+}
+
+.management{
+    background-color: #b2e494;
+    grid-area: management;
+}
+.data-analytics{
+    background: linear-gradient(rgb(231, 231, 71),white);
+    grid-area: data-analytics;
+}
+.crm-automation{
+    background-color: #ed95e3;
+    grid-area: crm-automation;
+}
+.project{
+    background-color: #b772bb;
+    grid-area: project;
+}
+.marketing{
+    background-color: #f3ba8b;
+    grid-area: marketing;
+}
+.automation{
+    background-color: #93e5ce;
+    grid-area: automation;
+}
